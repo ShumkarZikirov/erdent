@@ -1,0 +1,74 @@
+.mobileApp{
+    .mobileApp-main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        margin-top: 130px;
+        .mobileApp-img{
+            flex: 1;
+            position: relative;
+            right: 100px;
+            img{
+                width: auto;
+            }
+        }
+        .mobileApp-right{
+            position: relative;
+            right: 100px;
+            flex: 3;
+            h3{
+                font-size: 42px;
+                width: 500px;
+                margin-bottom: 25px;
+            }
+            p{
+                font-size: 18px;
+                color: rgba(61, 61, 63, 0.7);
+                line-height: 1.4;
+            }
+            .mobileApp-button{
+                display: flex;
+                margin-top: 33px;
+                gap: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 428px){
+    .mobileApp{
+        .mobileApp-main{
+            margin-top: 30px;
+            .mobileApp-img{
+                position: relative;
+                right: 30px;
+                img{
+                    max-width: 263px;
+                }
+            }
+            .mobileApp-right{
+                position: relative;
+                right: 60px;
+                width: 134px;
+                h3{
+                    font-size: 12px;
+                    width: 134px;
+                    margin-bottom: 25px;
+                }
+                p{
+                    font-size: 5px;
+                    line-height: 1.4;
+                }
+                .mobileApp-button{
+                    margin-top: 8px;
+                    gap: 4px;
+                    img{
+                        width: 37px;
+                        height: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

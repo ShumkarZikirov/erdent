@@ -1,0 +1,100 @@
+
+.headerInfo{
+    .headerInfo-main{
+        max-width: 1280px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        height: 675px;
+        .headerInfo-info{
+            width: 568px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 10;
+            h3{
+                font-size: 48px;
+            }
+            .headerInfo-info-h3{
+                position: relative;
+                line-height: 2;
+                .h3-position{
+                    position: absolute;
+                    margin-left: 20px;
+                }
+                .info-color{
+                    color: #40A3F8;
+                }
+            }
+            .info-text{
+                margin: 30px 0 40px 0;
+                color: rgba(117, 117, 117, 0.39);
+                font-size: 14px;
+                line-height: 1.8;
+            }
+            .info-btn{
+                width: 216px;
+                height: 59px;
+                background-color: #40A3F8;
+                color: white;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+        }
+        .img-line{
+            width: 200px;
+            position: absolute;
+            right: 90px;
+            top: 90px;
+            width: 600px;
+            z-index: 0;
+        }
+        .headerInfo-doctor{
+            position: relative;
+            left: 100px;
+
+            .doctor-img{
+                z-index: 50;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1024px){
+    .headerInfo-doctor{
+        display: none;
+    }
+}
+@media only screen and (max-width: 428px){
+
+    .headerInfo{
+        margin-top: 50px;
+        .headerInfo-main{
+            height: 170px;
+            width: 84%;
+            margin: auto;
+            .headerInfo-info{
+                h3{
+                    font-size: 28px;
+                    margin: 0;
+                }
+                .headerInfo-info-h3{
+                    .h3-position{
+                        margin-left: 10px;
+                    }
+                }
+                .info-text{
+                    margin: 0 0 40px 0;
+                    color: rgba(117, 117, 117, 0.39);
+                    font-size: 8px;
+                    max-width: 244px;
+                    line-height: 1.2;
+                }
+                .info-btn{
+                    display: none;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.listPrice {
+  margin-top: 150px;
+}
+.listPrice .listPrice-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.listPrice .listPrice-main div {
+  height: 79px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.listPrice .listPrice-main div p {
+  font-size: 37px;
+  float: left;
+}
+.listPrice .listPrice-main .listPrice-target {
+  border: #40A3F8 1px solid;
+  background-color: #40A3F8;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=list-price.css.map */

@@ -1,0 +1,22 @@
+.aboutPriceList .aboutPriceList-main {
+  margin: 0;
+  height: 300px;
+  background-color: #40A3F8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.aboutPriceList .aboutPriceList-main p {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 1.4;
+  margin: 0 40px;
+}
+.aboutPriceList .aboutPriceList-main .p-center {
+  padding: 20px 0;
+}
+
+/*# sourceMappingURL=about-price-list.css.map */
