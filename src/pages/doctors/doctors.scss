@@ -1,0 +1,12 @@
+.doctors-description{
+    margin: 200px 0;
+    padding: 50px 5px;
+}
+
+
+@media only screen and (max-width: 400px) {
+.doctors-description {
+    margin: 100px 0;
+    padding: 50px 5px;
+}
+}
