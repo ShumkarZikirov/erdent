@@ -10,16 +10,17 @@ import ModalTell from "./components/modal/modal-tell/modal-tell";
 function App() {
   return (
     <div className="App">
-        <div className={'App-main'}>
-            <React.Fragment>
-                <Header/>
-            </React.Fragment>
-            <Main/>
-        </div>
+      <div className={'App-main'}>
+        <React.Fragment>
+          <Header />
+        </React.Fragment>
+        <Main />
+      </div>
 
-        <ChangeLife/>
-        <Footer/>
-        <FotterFoot/>
+
+      <ChangeLife />
+      <Footer />
+      <FotterFoot />
     </div>
   );
 }

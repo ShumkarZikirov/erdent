@@ -1,0 +1,124 @@
+
+.info_color{
+    color: #40A3F8;
+}
+
+.services{
+    font-size: calc(8px + 11 * (100vw / 1280));
+    line-height: 1.5;
+    margin-bottom: 200px;
+}
+
+.all_header{
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background-image: url('../../assets/images/line-dark.png');
+    background-repeat:no-repeat ;
+    background-position: right;
+    background-size:contain;
+
+}
+
+.all_header_main{
+    max-width: 60%;    
+}
+
+.all_header_main div{
+    margin-bottom: 30px;
+}
+
+
+
+.all_header h1{
+    font-size: calc(24px + 56 * (100vw / 1280));
+    margin-bottom: 100px;
+}
+
+
+.sevices-price{
+    margin-bottom: 100px;
+}
+
+
+.description{
+    color: #FFF;
+    background: #40A3F8;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.main-description{
+    padding: 50px 0;
+    margin-bottom: 150px;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    padding:0 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px){
+    .services_header{
+        font-size: calc(8px + (11 + 11 * 0.7) * ((100vw - 320px) / 1280));
+        
+    }   
+    .services_header h1{
+        font-size: calc(24px + (56 + 56 * 0.7 ) * ((100vw - 320px) / 1280));
+    }
+    .services_header h3{
+        font-size: calc(9px + (12 + 12 * 0.7 ) * ((100vw - 320px) / 1280));
+    }
+
+    .all_header_main{
+        max-width: none;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .services_header{
+        margin-top: 0px;
+        padding-top: 50px;
+    }   
+    .services_header h1{
+        margin-bottom: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+
+.all_header {
+    margin-top: 50px;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.all_header h1{
+    margin-bottom: 50px;
+}
+.all_header_main div {
+    margin-bottom: 10px;
+}
+
+}
