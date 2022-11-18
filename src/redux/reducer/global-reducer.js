@@ -1,10 +1,13 @@
-import {CLEAR_ERROR, SHOW_LOADING, HIDE_LOADING, SHOW_ERROR } from "../type"
+import {CLEAR_ERROR, SHOW_LOADING, HIDE_LOADING, SHOW_ERROR ,OPEN_MODAl, CLOSE_MODAL} from "../type"
 
 const defaultState = {
     loading: false,
-    error: null
+    error: null,
+    name:'',
+    number:'',
+    modal:false
 }
-
+console.log(defaultState)
 export const globalReducer = (state = defaultState, action) => {
     switch(action.type) {
         case SHOW_LOADING: {
@@ -31,6 +34,18 @@ export const globalReducer = (state = defaultState, action) => {
                 error: action.payload
             }
         }
+        case CLOSE_MODAL: {
+            return {
+                ...state,
+                modal: false
+            }
+        }
+        case OPEN_MODAl: {
+                return {
+                    ...state,
+                    modal: true
+                }
+            }
         default:
             return state
     }

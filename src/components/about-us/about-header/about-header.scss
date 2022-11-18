@@ -1,63 +1,34 @@
 .aboutHeader{
-    .aboutHeader-main{
+    max-width: 1176px;
+    margin: 73px auto 0;
+    &-main{
         display: flex;
-        align-items: center;
-        margin-top: 100px;
-        .aboutHeader-left{
-            display: flex;
-            flex-direction: column;
-            h2{
-                font-size: 119px;
-            }
-            p{
-                font-size: 20px;
-            }
-            .aboutHeader-left-center{
-                margin: 9px 0 15px;
-            }
-        }
-        .aboutHeader-right{
-            img{
-                width: 580px;
-            }
-        }
-        .aboutHeader-color{
-            color: #40A3F8;
-        }
-        .about{padding-right: 20px}
+        justify-content: space-between;
+        gap: 20px;
     }
-}
-@media only screen and (max-width: 428px){
-    .aboutHeader{
-        z-index: 10;
-        width: 84%;
-        .aboutHeader-main{
-            position: relative;
-            margin-top: 0;
-            .aboutHeader-left{
-                z-index: 40;
-                display: flex;
-                flex-direction: column;
-                h2{
-                    font-size: 40px;
-                }
-                p{
-                    font-size: 9px;
-                }
-                .aboutHeader-left-center{
-                    margin: 9px 0 15px;
-                }
-            }
-            .aboutHeader-right{
-                img{
-                    z-index: 0;
-                    position: absolute;
-                    right: -60px;
-                    top: -100px;
-                    width: 400px;
-                    opacity: 0.7;
-                }
-            }
+    &__center{
+        background-color: #F3F4F6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        h3{
+            font-size: 36px;
+            max-width: 250px;
+            text-align: center;
+        }
+        p{
+            font-size: 14px;
+            text-align: center;
+            max-width: 250px;
+            margin: 16px 0 48px;
+        }
+        button{
+            width: 192px;
+            height: 48px;
+            background-color: #102231;
+            color: white;
         }
     }
 }

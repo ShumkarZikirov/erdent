@@ -1,12 +1,10 @@
 import './App.scss';
-import Header from "./components/header";
+import Header from "./components/main/header";
 import React from "react";
-import Footer from "./components/footer";
-import imgLine from '../src/assets/images/Back image shape.svg'
+import Footer from "./components/main/footer";
 import Main from "./pages/main";
-import FotterFoot from "./components/footer-foot";
-import ChangeLife from "./components/change-life";
-import ModalTell from "./components/modal/modal-tell/modal-tell";
+import FotterFoot from "./components/main/footer-foot";
+import ChangeLife from "./components/main/change-life";
 function App() {
   return (
     <div className="App">
@@ -16,7 +14,6 @@ function App() {
             </React.Fragment>
             <Main/>
         </div>
-
         <ChangeLife/>
         <Footer/>
         <FotterFoot/>

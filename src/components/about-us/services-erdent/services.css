@@ -1,85 +1,45 @@
-.servicesErdent .servicesErdent-main {
+.servicesErdent {
+  margin-top: 40px;
+}
+.servicesErdent__main {
+  max-width: 1169px;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 34px;
-  border-radius: 5px;
-  margin: 40px 0 118px 0;
-  background-color: #ededed;
+  padding-bottom: 80px;
 }
-.servicesErdent .servicesErdent-main h3 {
-  margin: 30px 0 26px 0;
-  text-align: center;
-  font-size: 49px;
-}
-.servicesErdent .servicesErdent-main h3 span {
-  color: #40A3F8;
-}
-.servicesErdent .servicesErdent-main p {
-  text-align: center;
-  font-size: 23px;
-  font-weight: 600;
-}
-.servicesErdent .servicesErdent-main p span {
-  color: #40A3F8;
-}
-.servicesErdent .servicesErdent-main .servicesErdent-bottom {
-  margin-bottom: 112px;
+.servicesErdent__main-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 30px;
 }
-.servicesErdent .servicesErdent-main .servicesErdent-bottom li {
-  margin: 0 20px;
+.servicesErdent__main-list .main-list-block {
   display: flex;
-  justify-content: stretch;
-  gap: 5px;
+  align-items: center;
+  width: 550px;
 }
-.servicesErdent .servicesErdent-main .servicesErdent-bottom li p {
-  font-weight: 500;
-  font-size: 16px;
-  text-align: left;
+.servicesErdent__main-list .main-list-block div h3 {
+  color: #27386E;
+  font-size: 18px;
 }
-.servicesErdent .servicesErdent-main .servicesErdent-bottom li span {
-  background-color: #00F076;
-  color: #00F076;
-  height: 14px;
-  border-radius: 50%;
+.servicesErdent__main-list .main-list-block div p {
+  color: #27386E;
+  font-size: 13px;
+  margin-top: 12px;
 }
-
-@media only screen and (max-width: 428px) {
-  .servicesErdent .servicesErdent-main {
-    gap: 10px;
-    margin: 0 0 32px 0;
-  }
-  .servicesErdent .servicesErdent-main h3 {
-    margin: 9px 0 8px 0;
-    font-size: 13px;
-  }
-  .servicesErdent .servicesErdent-main p {
-    font-size: 6px;
-  }
-  .servicesErdent .servicesErdent-main .servicesErdent-bottom {
-    margin-bottom: 38px;
-    gap: 5px;
-  }
-  .servicesErdent .servicesErdent-main .servicesErdent-bottom li {
-    margin: 0 10px;
-    display: flex;
-    justify-content: stretch;
-    gap: 2px;
-  }
-  .servicesErdent .servicesErdent-main .servicesErdent-bottom li p {
-    font-weight: 500;
-    font-size: 5px;
-    text-align: left;
-  }
-  .servicesErdent .servicesErdent-main .servicesErdent-bottom li span {
-    background-color: #00F076;
-    color: #00F076;
-    font-size: 4px;
-    height: 4px;
-    border-radius: 50%;
-  }
+.servicesErdent__top {
+  margin-bottom: 30px;
+}
+.servicesErdent__top p {
+  text-align: center;
+  margin: 60px 0 16px;
+  font-size: 14px;
+  color: #27386E;
+}
+.servicesErdent__top h3 {
+  text-align: center;
+  color: #27386E;
+  font-size: 36px;
 }
 
 /*# sourceMappingURL=services.css.map */

@@ -1,17 +1,13 @@
-import HeaderInfo from "../../components/header-info";
-import BestServis from "../../components/best-servis";
-import MainIcons from "../../components/main-icons";
-import OnlineDoctor from "../../components/online-doctor";
-import MobileApp from "../../components/mobile-app";
+import HeaderInfo from "../../components/main/header-info";
+import BestServis from "../../components/main/best-servis";
+import OnlineDoctor from "../../components/main/online-doctor";
 
 const Home = () => {
   return(
       <div>
           <HeaderInfo/>
-          <MainIcons/>
           <BestServis/>
           <OnlineDoctor/>
-          <MobileApp/>
       </div>
   )
 }

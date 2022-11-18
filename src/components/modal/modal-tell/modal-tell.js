@@ -1,9 +1,13 @@
-import {useState} from "react";
 import imgLogo from '../../../assets/images/header-logo.png'
 import './modal-tell.scss'
-const ModalTell = ({active,setActive}) => {
-  return(
-      <div onClick={() => setActive(false)} className={active?'modal-tell active':'modal-tell'}>
+import {useDispatch, useSelector} from "react-redux";
+import {closeModal} from "../../../redux/actions/global-action";
+
+const ModalTell = () => {
+    const dispatch = useDispatch()
+    const {modal} = useSelector(state => state.globalReducer)
+    return(
+      <div onClick={() => dispatch(closeModal())} className={modal?'modal-tell active':'modal-tell'}>
           <div className={'modal-main'}>
               <button id={'close-modal'}><i className="fa-solid fa-xmark"></i></button>
               <div onClick={e => e.stopPropagation()} className={'modal-content'}>

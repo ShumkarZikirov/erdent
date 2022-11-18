@@ -1,7 +1,13 @@
+import ServicesHeader from "../../components/services/services-header";
+import ServicesErdent from "../../components/about-us/services-erdent";
+
 const Services = () => {
   return(
       <div>
-          Services
+          <ServicesHeader/>
+          <div style={{backgroundColor:'#F1F1F1'}}>
+              <ServicesErdent/>
+          </div>
       </div>
   )
 }

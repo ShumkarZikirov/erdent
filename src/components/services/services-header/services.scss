@@ -1,0 +1,25 @@
+.servicesHeader{
+    &-main{
+        max-width: 1280px;
+        height: 100vh;
+        background-color: #F1F1F1;
+        margin: 70px auto 200px;
+        position: relative;
+        p{
+            color: #27386E;
+            font-size: 14px;
+            text-align: center;
+           padding-top: 96px;
+        }
+        h2{
+            color: #27386E;
+            font-size: 60px;
+            text-align: center;
+        }
+        &-block{
+            position: absolute;
+            bottom: -140px;
+            left: 10%;
+        }
+    }
+}
