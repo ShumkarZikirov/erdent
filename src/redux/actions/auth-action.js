@@ -1,7 +1,7 @@
 import { LOGOUT_AUTH, AUTH_ME } from '../type'
 
 export const getMeAction = (data) => {
-    console.log(data, "  data")
+    console.log(data)
     return {
         type: AUTH_ME,
         payload: {data}

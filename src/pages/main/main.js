@@ -5,6 +5,7 @@ import Doctors from "../doctors";
 import Services from "../services";
 import Logins from "../logins";
 import Register from "../../components/login/register/register";
+import Enroll from "../../components/enroll";
 const Main = () => {
   return(
       <Routes>
@@ -14,6 +15,7 @@ const Main = () => {
           <Route path="/doctors" element={<Doctors />} />
           <Route path='/sing-in' element={<Logins/>}/>
           <Route path='/auth/register' element={<Register/>}/>
+          <Route path={'/enroll'} element={<Enroll/>}/>
       </Routes>
   )
 }

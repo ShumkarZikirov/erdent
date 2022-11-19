@@ -9,6 +9,7 @@ export const getMeServices = () => {
     return async (dispatch) => {
         try {
             const response = await authRest.getMe()
+            console.log(response)
             dispatch(getMeAction(response.data))
         } catch (e) {
             console.log(e)
@@ -19,11 +20,12 @@ export const getMeServices = () => {
 
 
 export const registerServices = async (data) => {
+    console.log(data)
     try {
         const response = await authRest.register(data)
         console.log(response)
     } catch (e) {
-        console.log(e)
+        alert('no')
 
     }
 }

@@ -3,8 +3,9 @@ import { AUTH_ME, LOGOUT_AUTH } from "../type"
 const defaultState = {
     user: '',
 }
-console.log(defaultState.user)
+
 export const AuthReducer = (state = defaultState, action) => {
+    console.log(action)
     switch(action.type) {
         case AUTH_ME: {
             return {

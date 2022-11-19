@@ -10,6 +10,7 @@ const Header = () => {
 
     const navRef = useRef();
     const {user} = useSelector(state => state.AuthReducer)
+    console.log(user)
     const dispatch = useDispatch()
     const showNavbar = (e) => {
         navRef.current.classList.toggle('responsive_nav')

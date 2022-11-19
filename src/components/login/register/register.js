@@ -55,15 +55,15 @@ const Register = () => {
                         required={true}
                     />
                 </div>
-                <div className="auth__password">
-                    <input
-                        onChange={(e) => setEmail(e.target.value)}
-                        value={email}
-                        placeholder='Подтвердите пароль'
-                        type="password"
-                        required={true}
-                    />
-                </div>
+                {/*<div className="auth__password">*/}
+                {/*    <input*/}
+                {/*        onChange={(e) => setEmail(e.target.value)}*/}
+                {/*        value={email}*/}
+                {/*        placeholder='Подтвердите пароль'*/}
+                {/*        type="password"*/}
+                {/*        required={true}*/}
+                {/*    />*/}
+                {/*</div>*/}
                 <div className="auth__remember">
                     <input type="checkbox" />
                     <span>Запомнить меня</span>
