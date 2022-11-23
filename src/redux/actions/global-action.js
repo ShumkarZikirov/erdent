@@ -1,4 +1,4 @@
-import {CLEAR_ERROR, SHOW_LOADING, HIDE_LOADING, SHOW_ERROR } from "../type"
+import {CLEAR_ERROR, SHOW_LOADING, HIDE_LOADING, SHOW_ERROR, OPEN_MODAl, CLOSE_MODAL} from "../type"
 
 export const showError = (text) => {
     return {
@@ -19,5 +19,18 @@ export const showLoading = () => {
 export const hideLoading = () => {
     return {
         type: HIDE_LOADING,
+    }
+}
+
+export const openModal = () => {
+    return {
+        type: OPEN_MODAl
+    }
+}
+
+
+export const closeModal = () => {
+    return {
+        type: CLOSE_MODAL
     }
 }

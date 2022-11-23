@@ -1,7 +1,6 @@
 import './sing-in.scss'
 import React,{useState} from "react";
 import { Link } from 'react-router-dom';
-import logo from '../../../assets/images/teeth.png'
 import { loginServices, getMeServices } from '../../../services/auth-services';
 import { useSelector, useDispatch } from 'react-redux';
 import { clearError, hideLoading, showLoading } from '../../../redux/actions/global-action';
@@ -30,8 +29,7 @@ const SingIn = () => {
     return(
         <div className={'auth'}>
             <div className='logo'>
-                <img src={logo} alt="" />
-                <h1>Здравствуйте</h1>
+                <h1>Войти</h1>
             </div>
             <form onSubmit={handleSubmit} className='form-control' action="">
                 <div className="auth__login">
@@ -55,8 +53,11 @@ const SingIn = () => {
                 <div className="auth__btn">
                     <button type='submit'>{loading ? 'Загрузка...' : 'Войти'}</button>
                 </div>
+                <div className={'auth__forgot'}>
+                    <button>Забыли пароль</button>
+                </div>
                 <div className='auth__route'>
-                    <span>Уже есть аккаунт? </span><span>Уже есть аккаунт? </span> <Link to='/auth/register'>Войдите</Link>
+                    <span>Ещё нет аккаунта?</span><span></span> <Link to='/auth/register'>Зарегистрируйтесь</Link>
                 </div>
             </form>
         </div>

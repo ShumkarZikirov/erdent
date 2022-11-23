@@ -9,7 +9,7 @@ const Register = () => {
     const [email, setEmail] = useState('')
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
-    const [number,setNumber] = useState('')
+    // const [number,setNumber] = useState('')
     const { loading, error } = useSelector(state => state.globalReducer)
     const dispatch = useDispatch()
 
@@ -20,11 +20,11 @@ const Register = () => {
         dispatch(showLoading())
         dispatch(clearError)
         try {
-            await registerServices({email, username, password,number})
+            await registerServices({ username, password})
             setEmail('')
             setPassword('')
             setUsername('')
-            setNumber('')
+            // setNumber('')
         } catch (e) {
             dispatch(showError('ой что то не так!'))
         } finally {
@@ -32,9 +32,8 @@ const Register = () => {
         }
     }
     return (
-        <div className='auth'>
+        <div className='register'>
             <div className='logo'>
-                <img src={Logo} alt="" />
                 <h1>Здравствуйте</h1>
             </div>
             <form onSubmit={handleSubmit} className='form-control' action="">
@@ -51,29 +50,20 @@ const Register = () => {
                     <input
                         onChange={(e) => setPassword(e.target.value)}
                         value={password}
-                        placeholder='Пароль'
+                        placeholder='Придумайте пароль'
                         type="password"
                         required={true}
                     />
                 </div>
-                <div className="auth__password">
-                    <input
-                        onChange={(e) => setEmail(e.target.value)}
-                        value={email}
-                        placeholder='Email'
-                        type="text"
-                        required={true}
-                    />
-                </div>
-                <div className="auth__password">
-                    <input
-                        onChange={(e) => setNumber(e.target.value)}
-                        value={number}
-                        placeholder='Номер телефона'
-                        type="tel"
-                        required={true}
-                    />
-                </div>
+                {/*<div className="auth__password">*/}
+                {/*    <input*/}
+                {/*        onChange={(e) => setEmail(e.target.value)}*/}
+                {/*        value={email}*/}
+                {/*        placeholder='Подтвердите пароль'*/}
+                {/*        type="password"*/}
+                {/*        required={true}*/}
+                {/*    />*/}
+                {/*</div>*/}
                 <div className="auth__remember">
                     <input type="checkbox" />
                     <span>Запомнить меня</span>
@@ -82,7 +72,7 @@ const Register = () => {
                     <button type='submit'>{loading ? 'Загрузка...' : 'Зарегистрироваться'}</button>
                 </div>
                 <div className='auth__route'>
-                    <span>Нет ещё аккаунта?</span> <Link to='/sing-in'>Зарегистрируйтесь</Link>
+                    <span>Уже есть аккаунт?</span> <Link to='/sing-in'>Войдите</Link>
                 </div>
             </form>
         </div>

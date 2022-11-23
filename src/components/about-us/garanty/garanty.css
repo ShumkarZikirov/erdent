@@ -1,53 +1,35 @@
-.garanty .garanty-main {
-  border-radius: 5px;
-  margin-top: 86px;
+.garanty {
+  max-width: 1169px;
+  margin: 166px auto 50px;
+}
+.garanty-main {
   display: flex;
-  flex-direction: column;
-  background-color: #EDEDED;
+  align-items: center;
+  position: relative;
 }
-.garanty .garanty-main .garanty-top h3 {
-  text-align: center;
-  font-size: 42px;
-  margin: 12px 0 13px 0;
+.garanty-main .color {
+  color: #27386E;
 }
-.garanty .garanty-main .garanty-top h3 span {
-  color: #40A3F8;
+.garanty-main .main-div {
+  position: absolute;
+  background-color: #F1F1F1;
+  max-width: 624px;
+  right: 0;
+  padding: 32px;
 }
-.garanty .garanty-main .garanty-bottom {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.garanty-main .main-div h2 {
+  font-size: 36px;
+  margin: 24px 0 16px;
 }
-.garanty .garanty-main .garanty-bottom p {
-  font-size: 16px;
-  margin: 0 17px;
-  font-weight: 600;
+.garanty-main .main-div h5 {
+  font-size: 18px;
+  color: #2c2b2b;
+  font-weight: 300;
 }
-.garanty .garanty-main .garanty-bottom p:last-child {
-  margin-bottom: 74px;
-}
-
-@media only screen and (max-width: 428px) {
-  .garanty .garanty-main {
-    margin-top: 30px;
-  }
-  .garanty .garanty-main .garanty-top h3 {
-    font-size: 13px;
-    margin: 12px 0 10px 0;
-  }
-  .garanty .garanty-main .garanty-bottom {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  .garanty .garanty-main .garanty-bottom p {
-    font-size: 5px;
-    margin: 0 17px;
-    font-weight: 600;
-  }
-  .garanty .garanty-main .garanty-bottom p:last-child {
-    margin-bottom: 30px;
-  }
+.garanty-main .main-div p {
+  font-size: 14px;
+  margin: 20px 0;
+  color: #3D3D3F;
 }
 
 /*# sourceMappingURL=garanty.css.map */

@@ -9,7 +9,8 @@ const register = (data) => {
     return instance.post('/auth/users/', data)
 }
 const signIn = (data) => {
-    return instance.post('/auth/token/login', data)
+    // console.log(data)
+    return instance.post('/auth/token/login/', data)
 }
 const logout = () => {
     return instance.get('/auth/token/logout')
